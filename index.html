@@ -1,35 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Math Test</title>
+</head>
+<body>
+
 <!-- Start of Math Test Form -->
-<form>
+<form action="#" method="post">
   <h2>Math Test</h2>
 
   <!-- Name Field -->
   <label for="name">Your Name:</label>
-  <input type="text" id="name" name="username"><br><br>
+  <input type="text" id="name" name="username" required><br><br>
 
   <!-- Multiple Choice Question 1 -->
-  <p>1. What is 7 &times; 6?</p>
-  <input type="radio" name="q1" value="36"> 36<br>
-  <input type="radio" name="q1" value="42"> 42<br>
-  <input type="radio" name="q1" value="48"> 48<br><br>
+  <p>1. What is 7 × 6?</p>
+  <label><input type="radio" name="q1" value="36" required> 36</label><br>
+  <label><input type="radio" name="q1" value="42"> 42</label><br>
+  <label><input type="radio" name="q1" value="48"> 48</label><br><br>
 
   <!-- Multiple Choice Question 2 -->
   <p>2. What is the square root of 64?</p>
-  <input type="radio" name="q2" value="6"> 6<br>
-  <input type="radio" name="q2" value="8"> 8<br>
-  <input type="radio" name="q2" value="10"> 10<br><br>
+  <label><input type="radio" name="q2" value="6" required> 6</label><br>
+  <label><input type="radio" name="q2" value="8"> 8</label><br>
+  <label><input type="radio" name="q2" value="10"> 10</label><br><br>
 
   <!-- Multiple Choice Question 3 -->
   <p>3. Which symbol means "less than or equal to"?</p>
-  <input type="radio" name="q3" value=">="> &ge;<br>
-  <input type="radio" name="q3" value="<"> &lt;<br>
-  <input type="radio" name="q3" value="<="> &le;<br><br>
+  <label><input type="radio" name="q3" value=">=" required> ≥</label><br>
+  <label><input type="radio" name="q3" value="<"> &lt;</label><br>
+  <label><input type="radio" name="q3" value="<="> ≤</label><br><br>
 
   <!-- Word Problem -->
   <p>4. Word Problem:</p>
   <p>Emma bought 3 packs of markers. Each pack has 12 markers. How many markers does she have in total?</p>
-  <textarea name="wordproblem" rows="5" cols="40" placeholder="Type your answer here..."></textarea><br><br>
+  <textarea name="wordproblem" rows="5" cols="40" placeholder="Type your answer here..." required></textarea><br><br>
 
   <!-- Submit Button -->
   <input type="submit" value="Submit Test">
 </form>
 <!-- End of Math Test Form -->
+
+</body>
+</html>
